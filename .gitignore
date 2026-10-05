@@ -1,0 +1,9 @@
+# project working dirs are never committed (private footage + renders)
+editing/*
+!editing/.gitkeep
+
+# python
+__pycache__/
+*.pyc
+.venv/
+ffmpeg2pass*.log
