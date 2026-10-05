@@ -15,7 +15,7 @@ AI-agent pipeline for editing videos end-to-end from raw footage — headless Li
 3. **Recon** — vision sub-agents on filmstrips/contact sheets; `audio_analysis.py`, `find_speech.py`, `transcribe.py`
 4. **Plan** — `plan-montage.md`, signed off by the user before any long render
 5. **EDL** — the film as one JSON timeline (`docs/edl-schema.md`), validated by `verify_edl.py`
-6. **Render** — `montage.py` builds 16:9, 9:16, and audio masters from the same EDL
+6. **Render** — `montage.py` builds the montage from the EDL (format specified by the user if needed)
 7. **QC** — measured probes + vision-agent review of QC sheets
 8. **Deliver** — masters in `rendu/film/`, `export_whatsapp.py` for messaging apps
 
